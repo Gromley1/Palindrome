@@ -30,15 +30,8 @@ namespace Palindrome
             Array.Reverse(arr);
 
             string newStr = string.Join("", arr);
-
-            if (newStr == str)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            
+            return newStr == str;
         }
 
         //incase user puts in a string with spaces or upper case letters
